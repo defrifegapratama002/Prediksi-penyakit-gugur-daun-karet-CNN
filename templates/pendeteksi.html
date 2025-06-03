@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DEFRI FEGA PRATAMA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="static/img/kampus.png" rel="icon">
+
+  
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="static/css/style.css" rel="stylesheet">
+  <style>
+    .whiteteks {
+       color:white; /* change the color to your desired color */
+     }
+     .logo-kampus{
+      background-image: url('static/img/kampus.png');
+      width: 62px;
+      height: 60px;
+      background-size: cover;
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+     }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+        .carousel-inner img {
+            height: 70vh;
+        }
+
+        form {
+            display: flex;
+            height: 40vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            box-shadow: black;
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(15, 124, 34);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(15, 124, 34);
+            font-size: 3rem;
+
+        }
+
+        .gallery-h1 h1 {
+
+            background-color: rgb(2, 85, 9);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+
+        }
+
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(2, 85, 9);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            border-radius: 20px;
+            outline: none;
+            width: 315px;
+            color: white;
+            border: 3px solid rgb(0, 185, 0);
+        }
+
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 20px;
+            border: 2px solid rgb(0, 185, 0);
+            background-color: rgb(129, 129, 129);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(0, 185, 0);
+
+        }
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 170px;
+            padding: 15px 35px;
+            background-color: white;
+            border-radius: 15px;
+            color:rgb(0, 185, 0) ;
+            font-size: 1.5rem;
+            border: 4px solid rgb(0, 185, 0);
+        }
+
+        .carousel-caption {
+            background: rgba(2, 85, 9, 0.5);
+            border-radius: 10px;
+        }
+        .carousel-caption p {
+            padding: 7px;
+        }
+
+        .img-thumbnail {
+            height: 300px;
+        }
+
+        .Content-h5 {
+
+            padding: 15px;
+            background-color: rgb(153, 156, 150);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .whiteteks {
+          color:white;}
+
+        @media only screen and (max-width: 325px) {
+            body {
+                font-size: x-small;
+            }
+        }
+        #navbar ul li a {
+         font-size: 18px; /* change the font size to 18px */
+        }
+   </style>
+</head>
+
+<body>
+
+
+  <header id="header" class="fixed-top">
+    <div class="logo-kampus"></div>
+
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="whiteteks"> DEFRI FEGA PRATAMA</h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="prediksi">Pendeteksi</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <div id="hero" class="hero route bg-image" style="background-image: url(static/img/bg-karet.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+        
+            <section>
+
+                <div class="container">
+                    <h1 class="text-center mt-5" style="color: white">Klasifikasi Penyakit Gugur Daun Karet</h1>
+        
+                    <h2 class="text-center mt-2 mb-2" style="font-size: 2rem; top: 25px; color:white;">Masukkan Foto Daun Karet</h2>
+                    <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+        
+                        <input type="file" name="image" class="upload">
+                        <input type="submit" value="Prediksi">
+        
+                    </form>
+                </div>
+            </section>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/typed.js/typed.umd.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>

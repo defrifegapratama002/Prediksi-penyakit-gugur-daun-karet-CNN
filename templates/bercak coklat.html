@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title> </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+        .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        
+        .footer {    
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: 55px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <a class="navbar-brand" href="/"><b>HOME</b></a>
+        <a class="navbar-brand" href="prediksi"><b>PENDETEKSI</b></a> 
+    </nav>
+  
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px; margin-top: 25px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+                </span>
+            </div>
+
+            <div class="col-sm" style="margin-top: 25px;">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(48, 47, 47); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+
+                <h2 style="padding: 15px; background-color: rgb(224, 243, 229); color: black;"
+                class="text-center mb-5 content-h1 rounded">Nama Penyakit: <br><b>Penyakit Daun Bercak Coklat</b> yang disebabkan oleh Jamur<i>Pestalotiopsis  sp.</i> dan <i>Fusicoccum sp.</i> </span></h2>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+         <h2> Deskripsi Penyakit: </h2>
+            <p style="font-size: 17px;">Penyakit gugur daun Bercak coklat muda pada daun muda dan tua, memiliki batas yang jelas antara bercak dan bagian daun yang masih muda Bercak coklat muda pada daun muda dan tua serta tangkai daun Daun menguning dan akhirnya gugur sebelum waktunya Setelah daun gugur. Penyakit  gugur daun ini disebabkan oleh Pestalotiopsis sp, mengakibatkan pengguguran daun sehingga berpengaruh terhadap pengurangan hasil lateks hingga 30%. 
+            </p><br>
+         <hr class="w-100 mx-auto ">   
+        
+        
+         <h2> Tindakan Pencegahan: </h2>
+         <ol style="padding-left: 20px; font-size: 17px;">
+            <li>Menjaga kelembapan tanah</li>
+            <li>Melakukan sanitasi kebun dengan mengumpulkan dan memusnahkan sisa-sisa tanaman sakit yang dapat menjadi sumber serangan</li>
+        </ol><br> 
+        <hr class="w-100 mx-auto ">
+
+
+
+        <h2> Pengendalian: </h2>
+            <ol style="padding-left: 20px; font-size: 17px;">
+                <li>Aplikasi fungisida berbahan aktif metil thiophanat dengan dosis 2 ml/l air pada daun yang gugur di permukaan tanah untuk mengendalikan spora jamur Pestalotiopsis sp. Aplikasi dengan menggunakan knapsack sprayer atau mist blower denganinterval aplikasi dua kali, yaitu: pada saat setelah gugur akibat penyakit dan setelah gugur daun alami.</li>
+                <li>Aplikasi fungisida berbahan aktif propikonazol atau heksakonazol dengan dosis 5 ml/l air pada tajuk tanaman dengan menggunakan mist blower atau power sprayer dan dibutuhkan suspensi sebanyak 400-500 l/ha.</li>
+                <li>Aplikasi fungisida dengan cara fogging dan spraying ke bagian tajuk tanaman. Jika dipilih cara fogging disarankan juga spraying fungisida di bagian bawah gawangan lahan/ groundcover. Pengendalian penyakit GDK dengan fungisida akan efektif apabila dilaksanakan pada saat flush baru akan mekar, Aplikasi dengan cara fogging menggunakan dosis fungisida yaitu 500 ml bahan aktif + 4 l solar + 1 l air + 100 ml agristik.</li>
+                <li>Pencegahan dengan pengabutan belerang pada malam hari. Pengabutan belerang dapat diberikan dengan dosis 5-7 kg/Ha, interval 1 minggu dengan 4 kali aplikasi dan penghembusan dilakukan pada jam 02.00-05.00. Alat penghembus yang digunakan dapat berupa mist blower gendong duster.</li>
+                <li>Aplikasi fungisida berbahan aktif thiophanate methyl dengan dosis 2 ml/l pada daun-daun yang gugur di atas permukaan tanah untuk mengendalikan spora pestalotiopsis.</li>
+                <li>Aplikasi fungisida berbahan aktif propikonazol, heksakonazol dengan dosis 5 ml/l pada tajuk tanaman sebanyak 3 kali dengan interval 1 minggu.</li>
+                <li>Aplikasi pupuk dengan dosis yang tepat berimbang dan ditambahkan pupuk nitrogen ekstra 25%.</li>
+            </ol><br> 
+        <hr class="w-100 mx-auto ">
+        
+        <h2> Link Referensi Panduan Penanganan: </h2>       
+        <ol style="padding-left: 20px; font-size: 17px;">
+            <li><a href="https://repository.pertanian.go.id/server/api/core/bitstreams/efef6758-faad-407b-8a1a-d284f8ded0a4/content">PENGENALAN DAN PENGENDALIAN ORGANISME PENGGANGGU TUMBUHAN (OPT) TANAMAN KARET</a</li>
+            <li><a href="https://www.bing.com/ck/a?!&&p=b84e9fa35667ecd6JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0zZTdkNzk0MS1mODhlLTZiNjktMDUwNS02ODUyZjlkODZhOTcmaW5zaWQ9NTE5OA&ptn=3&ver=2&hsh=3&fclid=3e7d7941-f88e-6b69-0505-6852f9d86a97&psq=BUKU+SAKU+PENYAKIT+GUGUR+DAUN+KARET+(GDK)&u=a1aHR0cHM6Ly9zaW50YS5kaXRqZW5idW4ucGVydGFuaWFuLmdvLmlkL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzExL0J1a3Utc2FrdS1wZW55YWtpdC1HREstUGVzdGFsb3Rpb3BzaXMtc3AuLnBkZg&ntb=1">Buku Saku Penyakit Gugur Daun Karet by Pj. Direktur Perlindungan Perkebunan</a></li>
+           <li><a href="https://sinta.ditjenbun.pertanian.go.id/gugur-daun-colletotrichum/">Direktorat Jenderal Perkebunan Kementerian Pertanian RI 2016</a</li>
+           <li><a href="https://ditjenbun.pertanian.go.id/pengendalian-penyakit-gugur-daun-karet-demi-menjaga-produktivitas-karet/">Pengendalian Penyakit Gugur Daun Karet Demi Menjaga Produktivitas Karet, penulis :Yuni Astuti dan Ratri Wibawanti</a</li>
+       </ol><br> 
+       <hr class="w-100 mx-auto ">
+    </div>
+    
+
+
+
+
+
+    <section>
+        <div class="footer bg-success">
+
+            <h4 style="font-size: 1rem; color: #ffffff; padding-top: 15px;" class="text-center my-3 contents">
+                 Defri Fega Pratama </h4>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

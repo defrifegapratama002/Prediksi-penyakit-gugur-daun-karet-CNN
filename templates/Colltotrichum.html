@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title> </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: #0cd60c;
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+        .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        
+        .footer {
+            
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #25282b;
+            color: white;
+            text-align: center;
+            height: 55px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <a class="navbar-brand" href="/"><b>HOME</b></a>
+        <a class="navbar-brand" href="prediksi"><b>PENDETEKSI</b></a> 
+    </nav>
+  
+ 
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px; margin-top: 25px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+                </span>
+            </div>
+
+            <div class="col-sm" style="margin-top: 25px;">
+
+                <div>
+                    <h1 style="padding: 15px; background-color:  rgb(48, 47, 47); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+
+                <h2 style="padding: 15px; background-color: rgb(224, 243, 229); color: black;"
+                class="text-center mb-5 content-h1 rounded">Nama Penyakit: <br><b>Daun  terkena jamur Colltotrichum Gloeosporioides</b></span></h2>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+         <h2> Deskripsi Penyakit: </h2>
+            <p style="font-size: 17px;">Daun yang terinfeksi disebabkan oleh jamur Colltotrichum gloeosporioides Memiliki ciri ciri dengan bentuk Daun lemas, mengeriting atau  keriput, bagian ujungnya menggulung dan akhirnya daun gugur. kelembapan tanah tanah menjadi salah factor penyebabnya.
+            </p><br>
+         <hr class="w-100 mx-auto ">   
+        
+        
+        <h2> Tindakan Pencegahan: </h2>
+        
+         <ol style="padding-left: 20px; font-size: 17px;">
+            <li>Menjaga kelembapan tanah</li>
+            <li>Segera dilakukan pembersihan kebun dari gulma serta memotong ranting-ranting yang terlalu rimbun agar sinar matahari bisa masuk</li>
+            <li>Melakukan sanitasi kebun</li>
+            <li>Peremajaan kebun yang terserang berat</li>
+        </ol><br> 
+        <hr class="w-100 mx-auto ">
+
+        <h2> Pengendalian: </h2>
+          <ol style="padding-left: 20px; font-size: 17px;">
+            <li>Tanaman yang terserang sebaiknya diberi pupuk nitrogen dengan dosis tinggi (dua kali dosis anjuran) pada saat daun-daun baru mulai terbentuk. Karena pemberian pupuk biasanya pada awal musim hujan, maka sebaiknya pupuk dibenamkan ke dalam tanah agar mudah diserap akar.</li>
+            <li>Perlindungan atas serangan penyakit daun dilakukan dengan cara penyemprotan serbuk belerang seminggu sekali selama lima minggu. Pengembunan dimulai pada saat 10% pohon di kebun membentuk daun baru atau sudah terlihat gejala serangan. Waktu yang tepat untuk penghembusan belerang adalah pada pagi hari karena angin tidak akan terbawa dan serbuk akan mudah menempel pada permukaan daun.</li>
+            <li>Aplikasi fungisida berbahan aktif mancozeb 0,25% dengan cara penyemprotan pada siang hari dengan volume 400-600 l/ha atau fogging dengan minyak mineral pada malam hari</li>
+            <li>Aplikasi fungisida berbahan aktif klorotalonil 0,2% dengan dosis 0,75kg/ha.</li>
+         </ol><br> 
+        <hr class="w-100 mx-auto ">
+
+        <h2> Link Referensi Panduan Penanganan: </h2>       
+        <ol style="padding-left: 20px; font-size: 17px;">
+            <li><a href="https://www.bing.com/ck/a?!&&p=b84e9fa35667ecd6JmltdHM9MTcyMDEzNzYwMCZpZ3VpZD0zZTdkNzk0MS1mODhlLTZiNjktMDUwNS02ODUyZjlkODZhOTcmaW5zaWQ9NTE5OA&ptn=3&ver=2&hsh=3&fclid=3e7d7941-f88e-6b69-0505-6852f9d86a97&psq=BUKU+SAKU+PENYAKIT+GUGUR+DAUN+KARET+(GDK)&u=a1aHR0cHM6Ly9zaW50YS5kaXRqZW5idW4ucGVydGFuaWFuLmdvLmlkL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzExL0J1a3Utc2FrdS1wZW55YWtpdC1HREstUGVzdGFsb3Rpb3BzaXMtc3AuLnBkZg&ntb=1">Buku Saku Penyakit Gugur Daun Karet by Pj. Direktur Perlindungan Perkebunan</a></li>
+            <li><a href="https://sinta.ditjenbun.pertanian.go.id/gugur-daun-colletotrichum/">Direktorat Jenderal Perkebunan Kementerian Pertanian RI 2016</a</li>
+            <li><a href="https://ditjenbun.pertanian.go.id/pengendalian-penyakit-gugur-daun-karet-demi-menjaga-produktivitas-karet/">Pengendalian Penyakit Gugur Daun Karet Demi Menjaga Produktivitas Karet, penulis :Yuni Astuti dan Ratri Wibawanti</a</li>
+            <li><a href="https://repository.pertanian.go.id/server/api/core/bitstreams/efef6758-faad-407b-8a1a-d284f8ded0a4/content">PENGENALAN DAN PENGENDALIAN ORGANISME PENGGANGGU TUMBUHAN (OPT) TANAMAN KARET</a</li>
+       </ol><br> 
+       <hr class="w-100 mx-auto ">
+        
+        <p></p>
+    
+    </div>
+    
+
+    <section>
+        <div class="footer bg-success">
+
+            <h4 style="font-size: 1rem; color: #ffffff; padding-top: 15px;" class="text-center my-3 contents">
+                 Defri Fega Pratama </h4>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
