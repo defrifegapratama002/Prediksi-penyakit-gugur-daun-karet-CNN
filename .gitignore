@@ -126,3 +126,72 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 Icon*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Machine Learning specific
+*.pkl
+*.joblib
+# *.model
+# *.h5          # Commented out to allow model files
+# *.hdf5
+*.pb
+*.ckpt
+*.ckpt.*
+*.meta
+*.data-*
+*.index
+saved_model/
+checkpoints/
+logs/
+tensorboard_logs/
+
+# Allow specific model files
+!model/*.h5
+!model/*.json
+!model/*.pkl
+
+# Dataset files (large files)
+*.csv
+*.tsv
+dataset/
+data/
+datasets/
+raw_data/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Vercel
+.vercel
+
+# Upload folders
+uploads/
+temp_uploads/
+
+# Local configuration
+config.py
+local_config.py
+secrets.py
