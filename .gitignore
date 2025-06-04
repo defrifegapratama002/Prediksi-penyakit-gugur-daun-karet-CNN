@@ -10,8 +10,10 @@ venv.bak/
 *.lib
 bfg.jar
 bfg.jar/
-# Byte-compiled / optimized / DLL files 
-
+# Byte-compiled / optimized / DLL files p
+*.pyc
+.env
+.vercel
 # Python
 __pycache__/
 *.py[cod]
